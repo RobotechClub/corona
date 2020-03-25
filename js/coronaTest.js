@@ -5,6 +5,7 @@ let messages = [];
 let yesAnswerArr = [];
 let noAnswerArr = [];
 let lang = "";
+let cachedAnswers = [];
 
 $(document).ready(function () {
     $("#yesNoSection").hide();
@@ -19,7 +20,7 @@ function btnStartAction() {
     startBtn
     $('#loader').show();
     $('.wrapper').hide();
-    
+
     $.ajax({
         url: 'dataReader.php',
         success: function (data) {
@@ -29,9 +30,9 @@ function btnStartAction() {
             const obj = data.find(e => e.sheetName === lang)
             questions = obj.questionArr;
             messages = obj.messagesArr;
-            
+
             $('#loader').hide();
-            
+
             $('.wrapper').show();
             $("#startBtn").hide();
             $('#selectForm').hide();
@@ -40,9 +41,9 @@ function btnStartAction() {
             $("#steper").show();
 
             $("#question").html(questions[counter].question)
-           
+
             $("#yesRadioLabel").html(questions[counter].yes)
-            $("#noRadioLabel").html(questions[counter].no) 
+            $("#noRadioLabel").html(questions[counter].no)
 
         }
     });
@@ -110,14 +111,14 @@ function getMessage() {
     }
 
     if (isYes(1) || isYes(2) || isYes(3) && isNoSeq(4, 7) && anyYes(8, 12)
-        || (isNoSeq(1, 3) && anyYes(4, 7) && isNoSeq(8, 12))){
+        || (isNoSeq(1, 3) && anyYes(4, 7) && isNoSeq(8, 12))) {
         return messages[2];
     }
 
     if (isNoSeq(1, 12)) {
         return messages[3];
     }
-    if (isNoSeq(1, 7) && isYesSeq(8, 12)){
+    if (isNoSeq(1, 7) && isYesSeq(8, 12)) {
         return messages[4];
     }
 }
@@ -125,8 +126,7 @@ function getMessage() {
 
 function stepNextAction() {
     const value = $('input[name=choiceButon]:checked').val()
-
-    if(!value){
+    if (!value) {
         alert("Please choose answer")
         return;
     }
@@ -139,17 +139,38 @@ function stepNextAction() {
         $("#yesNoSection").html(message);
 
     } else {
+        const disCounter = displayCounter;
+        const nextCachedValue = cachedAnswers.find(e => e.counter === disCounter + 1);
+        const cachedValue = cachedAnswers.find(e => e.counter === displayCounter);
+
         const value = $('input[name=choiceButon]:checked').val()
+
         if (value === "yes")
             yesAnswerArr.push(displayCounter);
         else {
             noAnswerArr.push(displayCounter);
         }
+
+        if (cachedValue)
+            cachedValue.value = value;
+        else {
+            cachedAnswers.push({ "counter": displayCounter, value })
+
+        }
+
         displayCounter++
         counter++
         $("#qid").html(displayCounter)
-
         $("#question").html(questions[counter].question)
+        if (nextCachedValue) {
+            if (nextCachedValue.value === "yes") {
+                $("input[name=choiceButon][value=yes]").prop('checked', true);
+            }
+            if (nextCachedValue.value === "no") {
+                $("input[name=choiceButon][value=no]").prop('checked', true);
+            }
+        }
+
     }
 }
 function stepPreviousAction() {
@@ -157,6 +178,9 @@ function stepPreviousAction() {
         return;
     } else {
         displayCounter--
+        const cachedValue = cachedAnswers.find(e => e.counter === displayCounter);
+        if (cachedValue)
+            $("input[name=choiceButon][value=" + cachedValue.value + "]").prop('checked', true);
         $("#qid").html(displayCounter)
         counter--
         $("#question").html(questions[counter].question)

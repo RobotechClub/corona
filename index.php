@@ -24,13 +24,13 @@
                 <div class="form-check" id="yesNoSection">
                     <!-- Default unchecked disabled -->
                     <div class="custom-control custom-radio yesDiv">
-                        <input type="radio" class="custom-control-input" value = "yes" id="choiceButon" name="choiceButon">
+                        <input type="radio" class="custom-control-input" value = "yes" name="choiceButon">
                         <label class="custom-control-label" id="yesRadioLabel" for="choiceButon">YES</label>
                     </div>
 
                     <!-- Default checked disabled -->
                     <div class="custom-control custom-radio noDiv">
-                        <input type="radio" class="custom-control-input" value = "no" id="choiceButon" name="choiceButon">
+                        <input type="radio" class="custom-control-input" value = "no" name="choiceButon">
                         <label class="custom-control-label" id="noRadioLabel" for="choiceButon">NO</label>
                     </div>
                 </div>
