@@ -6,7 +6,8 @@
     <title>COVID-19 Test</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-
+    
+    <link rel="icon" type="image/ico" href="images/robotech .jpg" />
 </head>
 
 <body>
