@@ -6,7 +6,7 @@
     <title>COVID-19 Test</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    
+
     <link rel="icon" type="image/ico" href="images/robotech .jpg" />
 </head>
 
@@ -15,23 +15,26 @@
     <div class="wrapper" style="background-color:white">
 
         <div id="counter" style="float:right">
-           <div class="form-row"> <h3 id="qid">1</h3> <h2> /26 </h2> </div>
+            <div class="form-row">
+                <h3 id="qid">1</h3>
+                <h2 id="totalqid"> /26 </h2>
+            </div>
         </div>
         <form action="" id="wizard">
             <!-- SECTION 1 -->
-            <h3>COVID-19 Test</h3>
+            <h3 id="title">COVID-19 Test</h3>
             <section>
                 <h3 id="question" style="margin:30px"></h3>
                 <div class="form-check" id="yesNoSection">
                     <!-- Default unchecked disabled -->
                     <div class="custom-control custom-radio yesDiv">
-                        <input type="radio" class="custom-control-input" value = "yes" name="choiceButon">
+                        <input type="radio" class="custom-control-input" value="yes" name="choiceButon">
                         <label class="custom-control-label" id="yesRadioLabel" for="choiceButon">YES</label>
                     </div>
 
                     <!-- Default checked disabled -->
                     <div class="custom-control custom-radio noDiv">
-                        <input type="radio" class="custom-control-input" value = "no" name="choiceButon">
+                        <input type="radio" class="custom-control-input" value="no" name="choiceButon">
                         <label class="custom-control-label" id="noRadioLabel" for="choiceButon">NO</label>
                     </div>
                 </div>
@@ -61,6 +64,6 @@
     <script src="js/jquery-3.3.1.min.js"></script>
 
     <script src="js/coronaTest.js"></script>
-</body>
 
+</body>
 </html>
