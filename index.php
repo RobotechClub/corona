@@ -27,7 +27,7 @@
             <!-- SECTION 1 -->
             <h3 id="title">COVID-19 Test</h3>
             <section>
-                <h3 id="question" style="margin:30px"></h3>
+                <h3 id="question" style="margin:20px"></h3>
                 <div class="form-check" id="yesNoSection">
                     <!-- Default unchecked disabled -->
                     <div class="custom-control custom-radio yesDiv">
@@ -50,7 +50,7 @@
                     </select>
                 </div>
 
-                <div style="width:100%; text-align:center; padding:30px">
+                <div style="width:100%; text-align:center;">
                     <button type="button" id="startBtn" class="btn btn-secondary startBtn"
                         onclick="btnStartAction()">start</button>
                 </div>
