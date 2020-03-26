@@ -51,7 +51,7 @@ img {
   vertical-align: middle; }
 
 .wrapper {
-  width: 819px;
+  width: 600px;
   margin: auto;
   padding: 7px;
   background: url("../images/form-bg.png") repeat; 
@@ -63,7 +63,7 @@ img {
   position: relative;
   background: #fff;
   padding: 64px 58px 0;
-  height: 548px; }
+  height: 300px; }
 
 .steps .current-info, .steps .number {
   display: none; }
@@ -100,7 +100,7 @@ img {
 
 h3 {
   font-family: "Bookman Old Style";
-  font-size: 35px;
+  font-size: 25px;
   color: #3377c0;
   text-align: center;
   font-weight: 600;
@@ -123,11 +123,11 @@ h3 {
 }
 
  .noDiv{
-   padding: 50px;
+   padding: 30px;
  } 
  .yesDiv{
   margin-left: 8px;
-  padding: 50px;
+  padding: 30px;
 } 
 .form-row {
   display: flex;
@@ -383,5 +383,5 @@ h3 {
   100% { transform: rotate(360deg); }
 }
 #title{
-  padding: 55px;
+  padding: 40px;
 }

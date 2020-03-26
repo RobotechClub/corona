@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <title>COVID-19 Test</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="icon" type="image/ico" href="images/robotech .jpg" />
