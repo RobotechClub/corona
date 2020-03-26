@@ -51,7 +51,7 @@ img {
   vertical-align: middle; }
 
 .wrapper {
-  width: 600px;
+  width: 400px;
   margin: auto;
   padding: 7px;
   background: url("../images/form-bg.png") repeat; 
@@ -63,7 +63,7 @@ img {
   position: relative;
   background: #fff;
   padding: 64px 58px 0;
-  height: 300px; }
+  height: 200px; }
 
 .steps .current-info, .steps .number {
   display: none; }
@@ -246,7 +246,7 @@ h3 {
 .actions li[aria-disabled="true"] a {
   display: none; }
   #selectForm{
-    margin-left:60px; width:80%; text-align:center;
+    margin-left: 30px; width:80%; text-align:center;
   }
  @media only screen 
   and (min-device-width: 320px) 
