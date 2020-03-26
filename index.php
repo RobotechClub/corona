@@ -9,6 +9,9 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     <link rel="stylesheet" href="<?php echo "css/style.css?v=".round(microtime(true) * 1000); ?>">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 
     <link rel="icon" type="image/ico" href="images/robotech .jpg" />
 </head>
@@ -68,7 +71,41 @@
 
     <script src="<?php echo "js/coronaTest.js?v=".round(microtime(true) * 1000); ?>"> </script>
 
+    <footer class="footer-distributed">
+ 
+ <div class="footer-left">
+<img src="images/robotech .jpg">
 
+     <p class="footer-company-name">All Right Reserved © 2019 RoboTech.</p>
+ </div>
+
+ <div class="footer-center">
+     <div>
+         <i class="fa fa-map-marker"></i>
+           <p><span>Halba,
+             Akkar</span>
+             North Lebanon</p>
+     </div>
+
+     <div>
+         <i class="fa fa-phone"></i>
+         <p>+ 961 71 75 72 71</p>
+     </div>
+     <div>
+         <i class="fa fa-phone"></i>
+         <p>+ 961 76 13 10 28</p>
+     </div>
+ </div>
+ <div class="footer-right">
+     <p class="footer-company-about">
+         <span>About the company</span>
+         We offer training and skill building courses across Technology, Programming and Robotics, for kids, youth, and university students.</p>
+     <div class="footer-icons">
+         <a href="https://www.facebook.com/RoboTechHalbaAkkar" target="_blank"><i class="fa fa-facebook"></i></a>
+         <a href="https://www.instagram.com/robotechhalba/" target="_blank"><i class="fa fa-instagram"></i></a>
+    </div>
+ </div>
+</footer>
 
 </body>
 </html>
