@@ -14,7 +14,35 @@ $(document).ready(function () {
     $("#loader").hide();
 
     $('input[name="choiceButon"]').prop('checked', false);
+    
+    changeMainDisplayToLang($('#select').find(":selected").val());
+
+
+    $('#select').on('change', function() {
+        const selectedLang = this.value;
+        changeMainDisplayToLang(selectedLang);
+      });
+
 });
+
+function changeMainDisplayToLang(lang){
+    let selectLabel = "choose a language";
+    let startBtnLabel = "start"
+    let title = "COVID-19 Test"
+    if(lang === "arabic"){
+        selectLabel = "اختر لغة"
+        startBtnLabel = "ابدأ"
+        title = "COVID-19 اختبار"
+    }
+    if(lang === "french"){
+        startBtnLabel = "début";
+        selectLabel = "choisissez une langue"
+    }
+
+    $("#selectLabel").html(selectLabel)
+    $("#title").html(title)
+    $("#startBtn").html(startBtnLabel)
+}
 
 function btnStartAction() {
     startBtn
