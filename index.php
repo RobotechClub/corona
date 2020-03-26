@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <title>COVID-19 Test</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv='cache-control' content='no-cache'>
-    <meta http-equiv='expires' content='0'>
-    <meta http-equiv='pragma' content='no-cache'>
-    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="stylesheet" href="<?php echo "css/style.css?v=".round(microtime(true) * 1000); ?>">
 
     <link rel="icon" type="image/ico" href="images/robotech .jpg" />
 </head>
@@ -66,7 +66,9 @@
 
     <script src="js/jquery-3.3.1.min.js"></script>
 
-    <script src="js/coronaTest.js"></script>
+    <script src="<?php echo "js/coronaTest.js?v=".round(microtime(true) * 1000); ?>"> </script>
+
+
 
 </body>
 </html>
