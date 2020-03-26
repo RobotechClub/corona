@@ -12,6 +12,7 @@ $(document).ready(function () {
     $("#counter").hide();
     $("#steper").hide();
     $("#loader").hide();
+    $("#showResult").hide();
 
     $('input[name="choiceButon"]').prop('checked', false);
     
@@ -164,7 +165,10 @@ function stepNextAction() {
         $("#question").hide();
         $("#counter").hide();
         $("#steper").hide();
-        $("#yesNoSection").html(message);
+        $("#yesNoSection").hide();
+        $("#showResult").show();
+
+         $(".modal-body").html(message);
 
     } else {
         const disCounter = displayCounter;
