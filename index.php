@@ -97,16 +97,11 @@
           <div style="float:left">
             <p>All Rights Reserved © RoboTech Halba</p>
           </div>
-          <div class = "logo-footer" style="float:right">
-          <ul class="icon-bar">
-                 <li><a class="facebook" href="https://www.facebook.com/RoboTechHalbaAkkar" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                 <li><a class="instagram" href="https://www.instagram.com/robotechhalba/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-            </ul>
-          </div>
-          <div style="float:right">
-            <ul class="phone-bar">
-                 <li><i class="fa fa-phone"></i>(+961) 71 75 72 71 / 76 13 10 28</li>
-            </ul>
+          <div class="leftFooter">
+
+               <a href="#" class="fa fa-phone"></a> (+961) 71 75 72 71 / 76 13 10 28 
+                 <a href="https://www.facebook.com/RoboTechHalbaAkkar" class="fa fa-facebook"></a>
+                 <a href="https://www.instagram.com/robotechhalba/" class="fa fa-instagram"></a>
           </div>
       </div>
     </footer>
