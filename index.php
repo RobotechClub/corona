@@ -58,16 +58,13 @@
                 <div style="width:100%; text-align:center;">
                     <button type="button" id="startBtn" class="btn btn-secondary startBtn"
                         onclick="btnStartAction()">start</button>
-
-                    <button type="button" id="showResult" class="btn btn-primary" data-toggle="modal"
-                        data-target="#exampleModalLong">
-                        show Result </button>
                 </div>
             </section>
 
             <div id="steper" style="float:right">
-                <a href="#" id="stepNext" onclick="stepPreviousAction()" class="previous round">&#8249;</a>
-                <a href="#" id="stepPrevious" onclick="stepNextAction()" class="next round">&#8250;</a>
+                <a href="#" id="stepPrevious" onclick="stepPreviousAction()" class="previous round">&#8249;</a>
+                <a href="#" id="stepNext" onclick="stepNextAction()" class="next round">&#8250;</a>
+
             </div>
         </form>
 
@@ -75,7 +72,7 @@
 
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    <div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -90,7 +87,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">ReTest</button>
+                    <button type="button" class="btn btn-primary" onclick="btnResetAction()">ReTest</button>
                 </div>
             </div>
         </div>

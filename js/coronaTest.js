@@ -12,7 +12,6 @@ $(document).ready(function () {
     $("#counter").hide();
     $("#steper").hide();
     $("#loader").hide();
-    $("#showResult").hide();
 
     $('input[name="choiceButon"]').prop('checked', false);
     
@@ -46,7 +45,6 @@ function changeMainDisplayToLang(lang){
 }
 
 function btnStartAction() {
-    startBtn
     $('#loader').show();
     $('.wrapper').hide();
 
@@ -68,18 +66,27 @@ function btnStartAction() {
             $("#yesNoSection").show();
             $("#counter").show();
             $("#steper").show();
+            $("#question").show();
 
             $("#question").html(questions[counter].question)
-
+            $("#qid").html(displayCounter)
             $("#yesRadioLabel").html(questions[counter].yes)
             $("#noRadioLabel").html(questions[counter].no)
 
         }
     });
-
-
-
 }
+
+function btnResetAction(){
+    counter = 0;
+    displayCounter = 1;
+    $('.wrapper').show();
+    $('#selectForm').show();
+    $("#startBtn").show();
+    $('#resultModal').modal('hide');
+}
+
+
 function isYes(number) {
     return yesAnswerArr.includes(number);
 }
@@ -166,9 +173,10 @@ function stepNextAction() {
         $("#counter").hide();
         $("#steper").hide();
         $("#yesNoSection").hide();
-        $("#showResult").show();
+        $(".modal-body").html(message);
+       
+        $('#resultModal').modal('show');
 
-         $(".modal-body").html(message);
 
     } else {
         const disCounter = displayCounter;
