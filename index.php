@@ -9,6 +9,8 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     <link rel="stylesheet" href="<?php echo "css/style.css?v=".round(microtime(true) * 1000); ?>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <script src="js/jquery-3.3.1.min.js"></script>
 
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -93,9 +95,22 @@
             </div>
         </div>
     </div>
-    <footer class="footer">
-      <div class="container">
-      <p>© Company Name | Privacy Policy | Terms of Service</p>
+    <footer>
+      <div class = "div-footer">
+          <div style="float:left">
+            <p>All Rights Reserved © RoboTech Halba</p>
+          </div>
+          <div class = "logo-footer" style="float:right">
+          <ul class="icon-bar">
+                 <li><a class="facebook" href="https://www.facebook.com/RoboTechHalbaAkkar" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                 <li><a class="instagram" href="https://www.instagram.com/robotechhalba/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+          </div>
+          <div style="float:right">
+            <ul class="phone-bar">
+                 <li><i class="fa fa-phone"></i>(+961) 71 75 72 71 / 76 13 10 28</li>
+            </ul>
+          </div>
       </div>
     </footer>
     <script src="<?php echo "js/coronaTest.js?v=".round(microtime(true) * 1000); ?>"> </script>
