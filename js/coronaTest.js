@@ -143,19 +143,19 @@ function getMessage() {
         || ((isYes(1) || isYes(2) || isYes(3)) && isNoSeq(4, 7) && twoYes(8, 12))
         || (isNoSeq(1, 3) && (isYes(4) || isYes(5) || isYes(6) || isYes(7)) && (isYes(8) || isYes(9) || isYes(10) || isYes(11) || isYes(12)))) {
 
-        return messages[0];
+        return messages[1];
     }
 
     if (isYes(1) || isYes(2) || isYes(3) && isNoSeq(4, 7) && anyYes(8, 12)
         || (isNoSeq(1, 3) && anyYes(4, 7) && isNoSeq(8, 12))) {
-        return messages[0];
+        return messages[2];
     }
 
     if (isNoSeq(1, 12)) {
-        return messages[0];
+        return messages[3];
     }
     if (isNoSeq(1, 7) && isYesSeq(8, 12)) {
-        return messages[0];
+        return messages[4];
     }
 }
 
