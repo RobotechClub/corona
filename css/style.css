@@ -32,13 +32,8 @@ select {
   select option[value=""][disabled] {
     display: none; }
 
-p, h1, h2, h3, h4, h5, h6, ul {
+p, h1, h2, h3, h4, h5, h6 {
   margin: 0; }
-
-ul {
-  padding: 0;
-  margin: 0;
-  list-style: none; }
 
 a {
   text-decoration: none; }
@@ -65,39 +60,6 @@ img {
   padding: 14px 58px 0;
 
 }
-
-.steps .current-info, .steps .number {
-  display: none; }
-
-.steps {
-  position: absolute;
-  right: 42px;
-  top: 5px;
-  z-index: 9; }
-  .steps ul {
-    position: relative; }
-    .steps ul:before {
-      content: "1";
-      font-size: 40px;
-      color: #ccc;
-      font-family: "Bookman Old Style"; }
-    .steps ul:after {
-      content: "/ 3";
-      font-size: 15px;
-      color: #ccc;
-      font-family: "Bookman Old Style";
-      position: absolute;
-      left: 16px;
-      top: 13px;
-      width: 22px; }
-    .steps ul.step-2:before {
-      content: "2"; }
-    .steps ul.step-2:after {
-      left: 31px; }
-    .steps ul.step-3:before {
-      content: "3"; }
-    .steps ul.step-3:after {
-      left: 31px; }
 
 h3 {
   font-family: "Bookman Old Style";
@@ -182,67 +144,7 @@ h3 {
   .form-control:focus {
     border-color: #3377c0; }
 
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; }
 
-.grid-item {
-  width: 31.25%;
-  display: flex;
-  margin-bottom: 21px;
-  cursor: pointer; }
-  .grid-item .thumb {
-    width: 86.04%; }
-  .grid-item .heading {
-    width: 13.96%;
-    font-size: 11px;
-    background: #b3b3b3;
-    color: #fff;
-    font-family: "Bookman Old Style";
-    writing-mode: tb-rl;
-    transform: rotate(-180deg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 500;
-     }
-  .grid-item.active .heading {
-    background: #3377c0; }
-  .grid-item:hover img {
-    opacity: 0.6; }
-
-.actions ul {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 42px; }
-  .actions ul.mt-7 {
-    margin-top: 7px; }
-.actions li a {
-  border: none;
-  display: inline-flex;
-  height: 42px;
-  width: 112px;
-  align-items: center;
-  color: #fff;
-  cursor: pointer;
-  background: #3377c0;
-  justify-content: center;
-   }
-  .actions li a:hover {
-    background: #3b87d9; }
-.actions li:first-child a {
-  background: none;
-  border: 1px solid #3377c0;
-  color: #3377c0; }
-  .actions li:first-child a:hover {
-    border-color: transparent;
-    color: #fff;
-    background: #3b87d9; }
-.actions li[aria-disabled="true"]:before {
-  content: "Your must fill all fields, to be able to continue"; }
-.actions li[aria-disabled="true"] a {
-  display: none; }
   #selectForm{
     margin-left: 30px; width:80%; text-align:center;
   }
@@ -438,4 +340,19 @@ footer .div-footer {
   font-size: 80px;
   margin-top: 6px;
   padding-right: 12px;
+  }
+
+  .modal-body{
+    line-height: 35px;
+    font-size: 18px;
+  }
+
+  .modal-body ul:before {
+    content: " - ";
+    text-indent: -5px;
+    font-size: 18px;
+  }
+  #modalTitle{
+    text-align: center;
+    font-size: 18px;
   }

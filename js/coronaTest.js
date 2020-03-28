@@ -14,27 +14,27 @@ $(document).ready(function () {
     $("#loader").hide();
 
     $('input[name="choiceButon"]').prop('checked', false);
-    
+
     changeMainDisplayToLang($('#select').find(":selected").val());
 
 
-    $('#select').on('change', function() {
+    $('#select').on('change', function () {
         const selectedLang = this.value;
         changeMainDisplayToLang(selectedLang);
-      });
+    });
 
 });
 
-function changeMainDisplayToLang(lang){
+function changeMainDisplayToLang(lang) {
     let selectLabel = "choose a language";
     let startBtnLabel = "start"
     let title = "COVID-19 Test"
-    if(lang === "arabic"){
+    if (lang === "arabic") {
         selectLabel = "اختر لغة"
         startBtnLabel = "ابدأ"
         title = "COVID-19 اختبار"
     }
-    if(lang === "french"){
+    if (lang === "french") {
         startBtnLabel = "début";
         selectLabel = "choisissez une langue"
     }
@@ -77,7 +77,7 @@ function btnStartAction() {
     });
 }
 
-function btnResetAction(){
+function btnResetAction() {
     counter = 0;
     displayCounter = 1;
     $('.wrapper').show();
@@ -135,7 +135,7 @@ function anyYes(fromNumb, to) {
 }
 
 function getMessage() {
-    if ( (isYes(1) || isYes(2) || isYes(3)) && isNoSeq(4, 26)) {
+    if ((isYes(1) || isYes(2) || isYes(3)) && isNoSeq(4, 26)) {
         return messages[0];
     }
 
@@ -143,19 +143,19 @@ function getMessage() {
         || ((isYes(1) || isYes(2) || isYes(3)) && isNoSeq(4, 7) && twoYes(8, 12))
         || (isNoSeq(1, 3) && (isYes(4) || isYes(5) || isYes(6) || isYes(7)) && (isYes(8) || isYes(9) || isYes(10) || isYes(11) || isYes(12)))) {
 
-        return messages[1];
+        return messages[0];
     }
 
     if (isYes(1) || isYes(2) || isYes(3) && isNoSeq(4, 7) && anyYes(8, 12)
         || (isNoSeq(1, 3) && anyYes(4, 7) && isNoSeq(8, 12))) {
-        return messages[2];
+        return messages[0];
     }
 
     if (isNoSeq(1, 12)) {
-        return messages[3];
+        return messages[0];
     }
     if (isNoSeq(1, 7) && isYesSeq(8, 12)) {
-        return messages[4];
+        return messages[0];
     }
 }
 
@@ -173,8 +173,18 @@ function stepNextAction() {
         $("#counter").hide();
         $("#steper").hide();
         $("#yesNoSection").hide();
+        if (lang === "arabic") {
+            $(".modal-body").css("direction", "rtl");
+            $("li").css("margin-right", "30px");
+            $("#modalTitle").html("النتائج");
+            $("#closeBtn").html("إغلاق")
+            $("#restTestBtn").html("إعادة الفحص")
+
+        }else{
+            $(".modal-body").css("direction", "ltr");
+            $("li").css("margin-left", "30px");
+        }
         $(".modal-body").html(message);
-       
         $('#resultModal').modal('show');
 
 
