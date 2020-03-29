@@ -143,7 +143,7 @@ function anyYes(fromNumb, to) {
 }
 
 function getMessage() {
-    if ((isYes(1) || isYes(2) || isYes(3)) && isNoSeq(4, 26)) {
+    if ((isYes(1) || isYes(2) || isYes(3)) && isNoSeq(4, 12)) {
         return messages[0].message;
     }
 

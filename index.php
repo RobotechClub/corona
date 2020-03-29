@@ -25,7 +25,7 @@
         <div id="counter" style="float:right">
             <div class="form-row">
                 <h3 id="qid">1</h3>
-                <h2 id="totalqid"> /26 </h2>
+                <h2 id="totalqid"> /12 </h2>
             </div>
         </div>
         <form action="" id="wizard">
