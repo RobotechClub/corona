@@ -197,10 +197,11 @@ function stepNextAction() {
 
 
     } else {
+        
         const disCounter = displayCounter;
         const nextCachedValue = cachedAnswers.find(e => e.counter === disCounter + 1);
         const cachedValue = cachedAnswers.find(e => e.counter === displayCounter);
-
+      
         const value = $('input[name=choiceButon]:checked').val()
 
         if (value === "yes")
@@ -215,7 +216,9 @@ function stepNextAction() {
             cachedAnswers.push({ "counter": displayCounter, value })
 
         }
-
+        if(!nextCachedValue){
+            $('input[name="choiceButon"]').prop('checked', false);
+        }
         displayCounter++
         counter++
         $("#qid").html(displayCounter)

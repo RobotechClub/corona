@@ -281,8 +281,9 @@ footer .div-footer {
  .round {
   text-decoration: none;
   display: inline-block;
-  padding: 8px 16px;
+  padding: 8px 22px;
   border-radius: 50%;
+  font-size: 26px;
 }
 
 .round:hover {
@@ -291,12 +292,12 @@ footer .div-footer {
 }
 
 .previous {
-  background-color: #f1f1f1;
+  background-color: #0080A1;
   color: black;
 }
 
 .next {
-  background-color: #f1f1f1;
+  background-color: #0080A1;
   color: black;
 }
 #loader {
