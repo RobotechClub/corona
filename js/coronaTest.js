@@ -88,6 +88,9 @@ function btnStartAction() {
 function btnResetAction() {
     counter = 0;
     displayCounter = 1;
+    cachedAnswers = [];
+    yesAnswerArr=[];
+    noAnswerArr=[];
     $('.wrapper').show();
     $('#selectForm').show();
     $("#startBtn").show();
