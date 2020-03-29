@@ -30,7 +30,7 @@ function changeMainDisplayToLang(lang) {
     let startBtnLabel = "start"
     let title = "COVID-19 Test"
     let yesDiv = "YES"
-    let noDiv = "YES"
+    let noDiv = "NO"
     if (lang === "arabic") {
         selectLabel = "اختر لغة"
         startBtnLabel = "ابدأ"
@@ -169,6 +169,7 @@ function getMessage() {
 
 
 function stepNextAction() {
+    $(".next").css("color","black")
     const value = $('input[name=choiceButon]:checked').val()
     if (!value) {
         alert("Please choose answer")
@@ -231,10 +232,10 @@ function stepNextAction() {
                 $("input[name=choiceButon][value=no]").prop('checked', true);
             }
         }
-
     }
 }
 function stepPreviousAction() {
+    $(".previous").css("color","black")
     if (counter <= 0) {
         return;
     } else {
