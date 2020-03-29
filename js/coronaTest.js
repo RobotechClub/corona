@@ -91,6 +91,7 @@ function btnResetAction() {
     cachedAnswers = [];
     yesAnswerArr=[];
     noAnswerArr=[];
+    $('input[name="choiceButon"]').prop('checked', false);
     $('.wrapper').show();
     $('#selectForm').show();
     $("#startBtn").show();
