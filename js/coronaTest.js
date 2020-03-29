@@ -29,19 +29,28 @@ function changeMainDisplayToLang(lang) {
     let selectLabel = "choose a language";
     let startBtnLabel = "start"
     let title = "COVID-19 Test"
+    let yesDiv = "YES"
+    let noDiv = "YES"
     if (lang === "arabic") {
         selectLabel = "اختر لغة"
         startBtnLabel = "ابدأ"
         title = "COVID-19 اختبار"
+        yesDiv = "نعم"
+        noDiv = "كلا"
     }
     if (lang === "french") {
         startBtnLabel = "début";
         selectLabel = "choisissez une langue"
+        yesDiv = "OUI"
+        noDiv = "NO"
     }
 
     $("#selectLabel").html(selectLabel)
     $("#title").html(title)
     $("#startBtn").html(startBtnLabel)
+    $("#yesRadioLabel").html(yesDiv)
+    $("#noRadioLabel").html(noDiv)
+
 }
 
 function btnStartAction() {
@@ -49,14 +58,13 @@ function btnStartAction() {
     $('.wrapper').hide();
 
     $.ajax({
-        url: 'dataReader.php',
+        url: 'questionService.php',
         success: function (data) {
             lang = $('#select').find(":selected").val();
             data = JSON.parse(data)
             console.log(data)
-            const obj = data.find(e => e.sheetName === lang)
-            questions = obj.questionArr;
-            messages = obj.messagesArr;
+            questions = data.questionArr.filter(e => e.lang === lang)
+            messages = data.messagesArr.filter(e => e.lang === lang);
 
             $('#loader').hide();
 
@@ -136,26 +144,26 @@ function anyYes(fromNumb, to) {
 
 function getMessage() {
     if ((isYes(1) || isYes(2) || isYes(3)) && isNoSeq(4, 26)) {
-        return messages[0];
+        return messages[0].message;
     }
 
     if ((isYes(1) || isYes(2) || isYes(3)) && (isYes(4) || isYes(5) || isYes(6) || isYes(7))
         || ((isYes(1) || isYes(2) || isYes(3)) && isNoSeq(4, 7) && twoYes(8, 12))
         || (isNoSeq(1, 3) && (isYes(4) || isYes(5) || isYes(6) || isYes(7)) && (isYes(8) || isYes(9) || isYes(10) || isYes(11) || isYes(12)))) {
 
-        return messages[1];
+        return messages[1].message;
     }
 
     if (isYes(1) || isYes(2) || isYes(3) && isNoSeq(4, 7) && anyYes(8, 12)
         || (isNoSeq(1, 3) && anyYes(4, 7) && isNoSeq(8, 12))) {
-        return messages[2];
+        return messages[2].message;
     }
 
     if (isNoSeq(1, 12)) {
-        return messages[3];
+        return messages[3].message;
     }
     if (isNoSeq(1, 7) && isYesSeq(8, 12)) {
-        return messages[4];
+        return messages[4].message;
     }
 }
 
@@ -180,7 +188,7 @@ function stepNextAction() {
             $("#closeBtn").html("إغلاق")
             $("#restTestBtn").html("إعادة الفحص")
 
-        }else{
+        } else {
             $(".modal-body").css("direction", "ltr");
             $("li").css("margin-left", "30px");
         }
