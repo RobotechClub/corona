@@ -12,7 +12,11 @@ $(document).ready(function () {
     $("#counter").hide();
     $("#steper").hide();
     $("#loader").hide();
+    $("#conceptsPdf").hide();
+    $("#awarnessPdf").hide();
+    $("#housePdf").hide();
 
+    
     $('input[name="choiceButon"]').prop('checked', false);
 
     changeMainDisplayToLang($('#select').find(":selected").val());
@@ -251,4 +255,58 @@ function stepPreviousAction() {
         counter--
         $("#question").html(questions[counter].question)
     }
+}
+function showWrongConcepts(){
+    $("body").css("display", "block");
+    $("#wizard").hide();
+    $("#conceptsPdf").show();
+    $('.navbar-toggler').click();
+    $("#wrongConceptsItem").addClass("active");
+    $("#homeItem").removeClass("active");
+    $("#awarenessItem").removeClass("active");
+    $("#houseItem").removeClass("active");
+
+
+}
+function showAwarness(){
+    $("body").css("display", "block");
+    $("#wizard").hide();
+    hideAllPdf();
+    $("#awarnessPdf").show();
+    $('.navbar-toggler').click();
+    $("#awarenessItem").addClass("active");
+    $("#wrongConceptsItem").removeClass("active");
+    $("#homeItem").removeClass("active");
+    $("#houseItem").removeClass("active");
+
+}
+function showHouse(){
+    $("body").css("display", "block");
+    $("#wizard").hide();
+    hideAllPdf();
+    $("#housePdf").show();
+    $('.navbar-toggler').click();
+    $("#houseItem").addClass("active");
+    $("#awarenessItem").removeClass("active");
+    $("#wrongConceptsItem").removeClass("active");
+    $("#homeItem").removeClass("active");
+
+}
+
+function showHome(){
+    $("body").css("display", "flex");
+    $("#wizard").show();
+    hideAllPdf();
+    $('.navbar-toggler').click();
+    $("#homeItem").addClass("active");
+    $("#awarenessItem").removeClass("active");
+    $("#wrongConceptsItem").removeClass("active");
+    $("#houseItem").removeClass("active");
+
+}
+
+function hideAllPdf(){
+    $("#conceptsPdf").hide();
+    $("#awarnessPdf").hide();
+    $("#housePdf").hide();
 }

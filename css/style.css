@@ -155,7 +155,9 @@ h3 {
  @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px){
-   
+    
+    .navbar .navbar-collapse { text-align: center; }
+
     .wrapper {
       width: 90%;
       margin: auto;
@@ -397,4 +399,25 @@ footer .div-footer {
 
   .leftFooter{
     float:right;
+  }
+
+  .navBar{
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  
+  }
+  .navbar-toggler{
+    position: fixed;
+    right: 7px;
+  
+  }
+
+  #conceptsPdf, #awarnessPdf, #housePdf{
+    margin-top: 40px;
+  }
+
+  .navBar{
+    z-index: 100;
   }

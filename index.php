@@ -15,13 +15,41 @@
 
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 </head>
 
 <body>
-    <div class="web-logo">
-        <img src="images/redcross.png" alt="Lebanese Red Cross" width="100" height="100">
-    </div>
+                                
+    <div class="navBar">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+         <a class="navbar-brand" href="#">    <div class="web-logo">
+        <img src="images/redcross.png" alt="Lebanese Red Cross" width="60" height="60">
+    </div></a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon">        
+                    </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a id="homeItem" onclick="showHome()" class="nav-item nav-link active">الرئيسية</a>
+                    <a id="wrongConceptsItem" onclick="showWrongConcepts()" class="nav-item nav-link">مغالطات</a>
+                    <a id="awarenessItem" onclick="showAwarness()" class="nav-item nav-link">الكورونا؟</a>
+                    <a id="houseItem" onclick="showHouse()" class="nav-item nav-link">العزل المنزلي</a>
+
+                </div>
+            </div>
+        </nav>
+    </div>  
+    <iframe id="conceptsPdf" src="https://docs.google.com/viewer?srcid=15LO6S0ISVSOtW0VrahK_8YraVXOt2K6v&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="100%" height="100%"></iframe>
+    <iframe id="awarnessPdf" src="https://docs.google.com/viewer?srcid=1kYcxtfFcseW0lrg-QwbQTu0ul4uLx_eG&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="100%" height="100%"></iframe>
+    <iframe id="housePdf"    src="https://docs.google.com/viewer?srcid=1KJuYx8PwW7NWuO4yJMiIEE1ElXmGSxY3&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="100%" height="100%"></iframe>
+
     <div id="loader"></div>
     <div class="wrapper" style="background-color:white">
 
