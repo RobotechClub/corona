@@ -35,12 +35,12 @@
                     </span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
                 <div class="navbar-nav">
-                    <a id="homeItem" onclick="showHome()" class="nav-item nav-link active">الرئيسية</a>
-                    <a id="wrongConceptsItem" onclick="showWrongConcepts()" class="nav-item nav-link">مغالطات</a>
-                    <a id="awarenessItem" onclick="showAwarness()" class="nav-item nav-link">الكورونا؟</a>
                     <a id="houseItem" onclick="showHouse()" class="nav-item nav-link">العزل المنزلي</a>
+                    <a id="awarenessItem" onclick="showAwarness()" class="nav-item nav-link">الكورونا؟</a>
+                    <a id="wrongConceptsItem" onclick="showWrongConcepts()" class="nav-item nav-link">مغالطات</a>
+                    <a id="homeItem" onclick="showHome()" class="nav-item nav-link active">الرئيسية</a>
 
                 </div>
             </div>
