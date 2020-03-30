@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>COVID-19 Test</title>
+    <meta charset="utf-8">
+    <title>COVID-19 Test</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
@@ -11,15 +13,10 @@
     <link rel="stylesheet" href="<?php echo "css/style.css?v=".round(microtime(true) * 1000); ?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
 </head>
 
@@ -65,16 +62,17 @@
             <section>
                 <h3 id="question" style="margin:20px"></h3>
                 <div class="form-check" id="yesNoSection">
+
                     <!-- Default unchecked disabled -->
-                    <div class="custom-control custom-radio yesDiv">
-                        <input type="radio" class="custom-control-input" value="yes" name="choiceButon">
-                        <label class="custom-control-label" id="yesRadioLabel" for="choiceButon">YES</label>
+                    <div class="form-check yesDiv">
+                        <input type="radio" class="form-check-input" value="yes" name="choiceButon">
+                        <label class="form-check-label" id="yesRadioLabel" for="choiceButon">YES</label>
                     </div>
 
                     <!-- Default checked disabled -->
-                    <div class="custom-control custom-radio noDiv">
-                        <input type="radio" class="custom-control-input" value="no" name="choiceButon">
-                        <label class="custom-control-label" id="noRadioLabel" for="choiceButon">NO</label>
+                    <div class="form-check noDiv">
+                        <input type="radio" class="form-check-input" value="no" name="choiceButon">
+                        <label class="form-check-label" id="noRadioLabel" for="choiceButon">NO</label>
                     </div>
                 </div>
                 <div class="form-group" id="selectForm">
