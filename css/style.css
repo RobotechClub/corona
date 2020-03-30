@@ -331,6 +331,11 @@ footer .div-footer {
   margin: 30px;
 }
  
+.web-logo{
+  position:fixed;
+  top:0;
+  left:0;
+}
 
 footer {
   position: fixed;

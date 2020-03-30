@@ -19,6 +19,9 @@
 </head>
 
 <body>
+    <div class="web-logo">
+        <img src="images/redcross.png" alt="Lebanese Red Cross" width="100" height="100">
+    </div>
     <div id="loader"></div>
     <div class="wrapper" style="background-color:white">
 
