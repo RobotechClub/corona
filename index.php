@@ -43,9 +43,9 @@
             </div>
         </nav>
     </div>  
-    <iframe id="conceptsPdf" src="https://docs.google.com/viewer?srcid=15LO6S0ISVSOtW0VrahK_8YraVXOt2K6v&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="100%" height="100%"></iframe>
-    <iframe id="awarnessPdf" src="https://docs.google.com/viewer?srcid=1kYcxtfFcseW0lrg-QwbQTu0ul4uLx_eG&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="100%" height="100%"></iframe>
-    <iframe id="housePdf"    src="https://docs.google.com/viewer?srcid=1KJuYx8PwW7NWuO4yJMiIEE1ElXmGSxY3&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="100%" height="100%"></iframe>
+    <iframe id="conceptsPdf" src="https://docs.google.com/viewer?srcid=15LO6S0ISVSOtW0VrahK_8YraVXOt2K6v&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="100%" height="82%"></iframe>
+    <iframe id="awarnessPdf" src="https://docs.google.com/viewer?srcid=1kYcxtfFcseW0lrg-QwbQTu0ul4uLx_eG&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="100%" height="82%"></iframe>
+    <iframe id="housePdf"    src="https://docs.google.com/viewer?srcid=1KJuYx8PwW7NWuO4yJMiIEE1ElXmGSxY3&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="100%" height="82%"></iframe>
 
     <div id="loader"></div>
     <div class="wrapper" style="background-color:white">
