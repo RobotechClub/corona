@@ -12,11 +12,8 @@ $(document).ready(function () {
     $("#counter").hide();
     $("#steper").hide();
     $("#loader").hide();
-    $("#conceptsPdf").hide();
-    $("#awarnessPdf").hide();
-    $("#housePdf").hide();
 
-    
+    console.log("hiii najiii")
     $('input[name="choiceButon"]').prop('checked', false);
 
     changeMainDisplayToLang($('#select').find(":selected").val());
@@ -258,8 +255,6 @@ function stepPreviousAction() {
 }
 function showWrongConcepts(){
     $("body").css("display", "block");
-    $("#wizard").hide();
-    $("#conceptsPdf").show();
     $('.navbar-toggler').click();
     $("#wrongConceptsItem").addClass("active");
     $("#homeItem").removeClass("active");
@@ -270,9 +265,6 @@ function showWrongConcepts(){
 }
 function showAwarness(){
     $("body").css("display", "block");
-    $("#wizard").hide();
-    hideAllPdf();
-    $("#awarnessPdf").show();
     $('.navbar-toggler').click();
     $("#awarenessItem").addClass("active");
     $("#wrongConceptsItem").removeClass("active");
@@ -282,9 +274,6 @@ function showAwarness(){
 }
 function showHouse(){
     $("body").css("display", "block");
-    $("#wizard").hide();
-    hideAllPdf();
-    $("#housePdf").show();
     $('.navbar-toggler').click();
     $("#houseItem").addClass("active");
     $("#awarenessItem").removeClass("active");
@@ -295,18 +284,10 @@ function showHouse(){
 
 function showHome(){
     $("body").css("display", "flex");
-    $("#wizard").show();
-    hideAllPdf();
     $('.navbar-toggler').click();
     $("#homeItem").addClass("active");
     $("#awarenessItem").removeClass("active");
     $("#wrongConceptsItem").removeClass("active");
     $("#houseItem").removeClass("active");
 
-}
-
-function hideAllPdf(){
-    $("#conceptsPdf").hide();
-    $("#awarnessPdf").hide();
-    $("#housePdf").hide();
 }
