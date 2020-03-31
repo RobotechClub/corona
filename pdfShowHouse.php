@@ -34,9 +34,9 @@
 
             <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
                 <div class="navbar-nav">
-                    <a id="houseItem" onclick="showHouse()" href="pdfShowHouse.php?var=azel_manzeli.pdf" class="nav-item nav-link active">العزل المنزلي</a>
-                    <a id="awarenessItem" onclick="showAwarness()" href="pdfShowAwarness.php?var=awarness_corona.pdf" class="nav-item nav-link">الكورونا؟</a>
-                    <a id="wrongConceptsItem" onclick="showWrongConcepts()" href="pdfViewerPage.php?var=wrong_concepts.pdf" class="nav-item nav-link">مغالطات</a>
+                    <a id="houseItem" onclick="showHouse()" href="pdfShowHouse.php" class="nav-item nav-link active">العزل المنزلي</a>
+                    <a id="awarenessItem" onclick="showAwarness()" href="pdfShowAwarness.php" class="nav-item nav-link">الكورونا؟</a>
+                    <a id="wrongConceptsItem" onclick="showWrongConcepts()" href="pdfViewerPage.php" class="nav-item nav-link">مغالطات</a>
                     <a id="homeItem" onclick="showHome()" href="index.php" class="nav-item nav-link">الرئيسية</a>
 
                 </div>
@@ -44,7 +44,7 @@
         </nav>
     </div>  
 
-    <iframe id="pdfViewer" src="<?php echo $_GET['var']?>" width="100%" height="100%"></iframe>
+    <iframe id="pdfViewer" src="https://docs.google.com/viewer?srcid=1KJuYx8PwW7NWuO4yJMiIEE1ElXmGSxY3&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="100%" height="100%"></iframe>
 
     <script src="<?php echo "js/coronaTest.js?v=".round(microtime(true) * 1000); ?>"> </script>
 
