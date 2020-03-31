@@ -156,9 +156,8 @@ h3 {
   and (min-device-width: 170px) 
   and (max-device-width: 764px){
 
-    #conceptsPdf, #awarnessPdf, #housePdf{
+    #pdfViewer{
       margin-top: 5px;
-      height: 75%;
     }
     .navbar .navbar-collapse { text-align: center; z-index: 200;}
     #navToolbar  {
@@ -431,7 +430,7 @@ footer .div-footer {
   
   }
 
-  #conceptsPdf, #awarnessPdf, #housePdf{
+  #pdfViewer{
     margin-top: 50px;
   }
 

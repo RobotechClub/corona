@@ -34,18 +34,15 @@
 
             <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
                 <div class="navbar-nav">
-                    <a id="houseItem" onclick="showHouse()" class="nav-item nav-link">العزل المنزلي</a>
-                    <a id="awarenessItem" onclick="showAwarness()" class="nav-item nav-link">الكورونا؟</a>
-                    <a id="wrongConceptsItem" onclick="showWrongConcepts()" class="nav-item nav-link">مغالطات</a>
-                    <a id="homeItem" onclick="showHome()" class="nav-item nav-link active">الرئيسية</a>
+                    <a id="houseItem" onclick="showHouse()" href="pdfViewerPage.php?var=azel_manzeli.pdf" class="nav-item nav-link">العزل المنزلي</a>
+                    <a id="awarenessItem" onclick="showAwarness()" href="pdfViewerPage.php?var=awarness_corona.pdf" class="nav-item nav-link">الكورونا؟</a>
+                    <a id="wrongConceptsItem" onclick="showWrongConcepts()" href="pdfViewerPage.php?var=wrong_concepts.pdf" class="nav-item nav-link">مغالطات</a>
+                    <a id="homeItem" onclick="showHome()" href="index.php" class="nav-item nav-link active">الرئيسية</a>
 
                 </div>
             </div>
         </nav>
     </div>  
-    <iframe id="conceptsPdf" src="https://docs.google.com/viewer?srcid=15LO6S0ISVSOtW0VrahK_8YraVXOt2K6v&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="100%" height="82%"></iframe>
-    <iframe id="awarnessPdf" src="https://docs.google.com/viewer?srcid=1kYcxtfFcseW0lrg-QwbQTu0ul4uLx_eG&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="100%" height="82%"></iframe>
-    <iframe id="housePdf"    src="https://docs.google.com/viewer?srcid=1KJuYx8PwW7NWuO4yJMiIEE1ElXmGSxY3&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="100%" height="82%"></iframe>
 
     <div id="loader"></div>
     <div class="wrapper" style="background-color:white">
