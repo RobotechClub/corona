@@ -285,7 +285,7 @@ footer .div-footer {
  }     
 .form-check-label{
     font-size: 26px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .startBtn, .showResult{
   margin: 0;
@@ -437,4 +437,11 @@ footer .div-footer {
 
   .navBar{
     z-index: 100;
+  }
+
+  #radioInputYes {
+    margin-top: 8px;
+  }
+  #radioInputNo {
+    margin-left: -24px;
   }

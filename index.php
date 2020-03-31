@@ -65,13 +65,13 @@
 
                     <!-- Default unchecked disabled -->
                     <div class="form-check yesDiv">
-                        <input type="radio" class="form-check-input" value="yes" name="choiceButon">
+                        <input type="radio" class="form-check-input radioInput" value="yes" name="choiceButon" id="radioInputYes">
                         <label class="form-check-label" id="yesRadioLabel" for="choiceButon">YES</label>
                     </div>
 
                     <!-- Default checked disabled -->
                     <div class="form-check noDiv">
-                        <input type="radio" class="form-check-input" value="no" name="choiceButon">
+                        <input type="radio" class="form-check-input" value="no" name="choiceButon" id="radioInputNo">
                         <label class="form-check-label" id="noRadioLabel" for="choiceButon">NO</label>
                     </div>
                 </div>
