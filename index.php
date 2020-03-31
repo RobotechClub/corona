@@ -121,7 +121,7 @@
             </div>
         </div>
     </div>
-    <footer>
+    <footer id="footer">
       <div class = "div-footer">
           <div style="float:left">
             <p>All Rights Reserved © RoboTech Halba</p>
