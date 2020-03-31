@@ -23,11 +23,11 @@
 <body>
                                 
     <div class="navBar">
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <nav id="navToolbar" class="navbar navbar-expand-md navbar-light bg-light">
          <a class="navbar-brand" href="#">    <div class="web-logo">
         <img src="images/redcross.png" alt="Lebanese Red Cross" width="60" height="60">
     </div></a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <button type="button" id="toogleBtn" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon">        
                     </span>
             </button>

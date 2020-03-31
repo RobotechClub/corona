@@ -153,11 +153,19 @@ h3 {
     margin-left: 30px; width:80%; text-align:center;
   }
  @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px){
-    
-    .navbar .navbar-collapse { text-align: center; }
-
+  and (min-device-width: 170px) 
+  and (max-device-width: 764px){
+    #conceptsPdf, #awarnessPdf, #housePdf{
+      margin-top: 5px;
+      height: 75%;
+    }
+    .navbar .navbar-collapse { text-align: center; z-index: 200;}
+    #navToolbar  {
+      padding-bottom: 40px;
+    }
+    #toogleBtn{
+      margin-top: 15px;
+    }
     .wrapper {
       width: 90%;
       margin: auto;
@@ -223,9 +231,9 @@ h3 {
 }
 
 footer .div-footer {
-  margin-top: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 5px;
 }
 .leftFooter {
   margin: 0;
@@ -267,9 +275,8 @@ footer .div-footer {
     width: 25px;
  }     
 .form-check-label{
-    /* padding: 100px; */
-    padding-left: 20px;
-    font-size: 32px;
+    font-size: 26px;
+    margin-left: 20px;
 }
 .startBtn, .showResult{
   margin: 0;
@@ -416,7 +423,7 @@ footer .div-footer {
   }
 
   #conceptsPdf, #awarnessPdf, #housePdf{
-    margin-top: 55px;
+    margin-top: 50px;
   }
 
   .navBar{
