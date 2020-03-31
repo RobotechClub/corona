@@ -157,7 +157,7 @@ h3 {
   and (max-device-width: 764px){
 
     #pdfViewer{
-      margin-top: 5px;
+      margin-top: 1px;
     }
     .navbar .navbar-collapse { text-align: center; z-index: 200;}
     #navToolbar  {
@@ -431,7 +431,7 @@ footer .div-footer {
   }
 
   #pdfViewer{
-    margin-top: 50px;
+    margin-top: 123px;
   }
 
   .navBar{
