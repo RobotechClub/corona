@@ -44,7 +44,7 @@
         </nav>
     </div>  
 
-    <iframe id="pdfViewer" src="<?php echo "http://robotechclub.alwaysdata.net/".$_GET['var']?>" width="100%" height="100%"></iframe>
+    <iframe id="pdfViewer" src="<?php echo $_GET['var']?>" width="100%" height="100%"></iframe>
 
     <script src="<?php echo "js/coronaTest.js?v=".round(microtime(true) * 1000); ?>"> </script>
 
