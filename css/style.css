@@ -176,6 +176,9 @@ h3 {
     font-size: 22px;
   
   }
+  #pdfViewer{
+    margin-top: 123px;
+  }
  @media only screen 
   and (min-device-width: 170px) 
   and (max-device-width: 764px){
@@ -205,7 +208,7 @@ h3 {
     }
 
     #pdfViewer{
-      margin-top: 1px;
+      margin-top: 110px;
     }
     .navbar .navbar-collapse { text-align: center; z-index: 200;}
     /* #navToolbar  {
@@ -474,9 +477,6 @@ footer .div-footer {
   
   } */
 
-  #pdfViewer{
-    margin-top: 123px;
-  }
 
   .navBar{
     z-index: 100;
