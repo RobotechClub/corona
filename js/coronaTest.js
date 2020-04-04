@@ -13,7 +13,6 @@ $(document).ready(function () {
     $("#steper").hide();
     $("#loader").hide();
 
-    console.log("hiii najiii")
     $('input[name="choiceButon"]').prop('checked', false);
 
     changeMainDisplayToLang($('#select').find(":selected").val());

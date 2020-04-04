@@ -44,8 +44,13 @@
         </nav>
     </div>  
 
-    <iframe id="pdfViewer" src="https://docs.google.com/viewer?srcid=1kYcxtfFcseW0lrg-QwbQTu0ul4uLx_eG&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="100%" height="100%"></iframe>
-
+    <iframe id="pdfViewer"  onload="$('.iframe-loading').css('display', 'none');" src="https://docs.google.com/viewer?srcid=1kYcxtfFcseW0lrg-QwbQTu0ul4uLx_eG&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="100%" height="100%"></iframe>
+    
+    <div class = "iframe-loading">
+        <div class="iframe-placeholder"> </div>
+        <div class="iframe-placeholder-text">... الرجاء الانتظار </div>
+    </div>
+    
     <script src="<?php echo "js/coronaTest.js?v=".round(microtime(true) * 1000); ?>"> </script>
 
 </body>
