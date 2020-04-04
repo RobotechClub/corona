@@ -188,14 +188,24 @@ function stepNextAction() {
         $("#yesNoSection").hide();
         if (lang === "arabic") {
             $(".modal-body").css("direction", "rtl");
-            $("li").css("margin-right", "30px");
             $("#modalTitle").html("النتائج");
             $("#closeBtn").html("إغلاق")
             $("#restTestBtn").html("إعادة الفحص")
 
-        } else {
+        } 
+        else if (lang === "french") {
+            $(".modal-body").css("direction", "ltr");
+            $("#closeBtn").html("Fermer")
+            $("#restTestBtn").html("Retester")
+            $("#modalTitle").html("Résultat");
+
+        }
+        else {
             $(".modal-body").css("direction", "ltr");
             $("li").css("margin-left", "30px");
+            $("#closeBtn").html("Close")
+            $("#restTestBtn").html("ReTest")
+            $("#modalTitle").html("Results");
         }
         $(".modal-body").html(message);
         $('#resultModal').modal('show');
