@@ -34,10 +34,10 @@
 
             <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
                 <div class="navbar-nav">
-                    <a id="houseItem" onclick="showHouse()" href="pdfShowHouse.php" class="nav-item nav-link">العزل المنزلي</a>
-                    <a id="awarenessItem" onclick="showAwarness()" href="pdfShowAwarness.php" class="nav-item nav-link">الكورونا؟</a>
-                    <a id="wrongConceptsItem" onclick="showWrongConcepts()" href="pdfViewerPage.php" class="nav-item nav-link">مغالطات</a>
-                    <a id="homeItem" onclick="showHome()" href="index.php" class="nav-item nav-link active">الرئيسية</a>
+                    <a id="houseItem" href="pdfShowHouse.php" class="nav-item nav-link">العزل المنزلي</a>
+                    <a id="awarenessItem" href="pdfShowAwarness.php" class="nav-item nav-link">الكورونا؟</a>
+                    <a id="wrongConceptsItem" href="pdfViewerPage.php" class="nav-item nav-link">مغالطات</a>
+                    <a id="homeItem" href="index.php" class="nav-item nav-link active">الرئيسية</a>
 
                 </div>
             </div>

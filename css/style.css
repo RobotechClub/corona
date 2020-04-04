@@ -208,12 +208,12 @@ h3 {
       margin-top: 1px;
     }
     .navbar .navbar-collapse { text-align: center; z-index: 200;}
-    #navToolbar  {
+    /* #navToolbar  {
       padding-bottom: 40px;
     }
     #toogleBtn{
       margin-top: 15px;
-    }
+    } */
     .wrapper {
       width: 90%;
       margin: auto;
@@ -472,11 +472,11 @@ footer .div-footer {
     width: 100%;
   
   }
-  .navbar-toggler{
+  /* .navbar-toggler{
     position: fixed;
     right: 7px;
   
-  }
+  } */
 
   #pdfViewer{
     margin-top: 123px;
