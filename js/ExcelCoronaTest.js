@@ -58,14 +58,15 @@ function btnStartAction() {
     $('.wrapper').hide();
 
     $.ajax({
-        url: 'readers/csvReader.php',
+        url: '/readers/excelReader.php',
         success: function (data) {
             lang = $('#select').find(":selected").val();
-            console.log(data)
             data = JSON.parse(data)
-            questions = data.questionArr.filter(e => e.lang === lang)
-            messages = data.messagesArr.filter(e => e.lang === lang);
-
+            console.log(data)
+            const obj = data.find(e => e.sheetName === lang)
+            questions = obj.questionArr;
+            messages = obj.messagesArr;
+            
             $('#loader').hide();
 
             $('.wrapper').show();
@@ -148,26 +149,26 @@ function anyYes(fromNumb, to) {
 
 function getMessage() {
     if ((isYes(1) || isYes(2) || isYes(3)) && isNoSeq(4, 12)) {
-        return messages[0].message;
+        return messages[0];
     }
 
     if ((isYes(1) || isYes(2) || isYes(3)) && (isYes(4) || isYes(5) || isYes(6) || isYes(7))
         || ((isYes(1) || isYes(2) || isYes(3)) && isNoSeq(4, 7) && twoYes(8, 12))
         || (isNoSeq(1, 3) && (isYes(4) || isYes(5) || isYes(6) || isYes(7)) && (isYes(8) || isYes(9) || isYes(10) || isYes(11) || isYes(12)))) {
 
-        return messages[1].message;
+        return messages[1];
     }
 
     if (isYes(1) || isYes(2) || isYes(3) && isNoSeq(4, 7) && anyYes(8, 12)
         || (isNoSeq(1, 3) && anyYes(4, 7) && isNoSeq(8, 12))) {
-        return messages[2].message;
+        return messages[2];
     }
 
     if (isNoSeq(1, 12)) {
-        return messages[3].message;
+        return messages[3];
     }
     if (isNoSeq(1, 7) && isYesSeq(8, 12)) {
-        return messages[4].message;
+        return messages[4];
     }
 }
 
