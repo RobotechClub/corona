@@ -179,10 +179,17 @@ h3 {
   #pdfViewer{
     margin-top: 123px;
   }
+  #resultModal{
+    margin-left:20% ;
+  }
  @media only screen 
   and (min-device-width: 170px) 
   and (max-device-width: 764px){
     
+    #resultModal{
+      margin-left:0 ;
+    }
+
     .iframe-placeholder{
       background: url("../images/103.gif") no-repeat;
       height: 25px;
@@ -386,6 +393,7 @@ footer .div-footer {
   height: 100px;
 }
 
+
 /* Safari */
 @-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg); }
@@ -450,7 +458,7 @@ footer .div-footer {
 }
 
   .modal-body{
-    line-height: 35px;
+    line-height: 20px;
     font-size: 16px;
   }
 
@@ -502,3 +510,4 @@ footer .div-footer {
     text-align: center;
     font-size: 18px;
   }
+  

@@ -1,36 +1,18 @@
-"28","هل كنت متواجدا خارج البلاد في الأسابيع الأربعة الماضية؟","1","arabic"
-"29","هل كنت على اتصال بحالة مؤكدة؟","2","arabic"
-"30","هل كنت على اتصال بحالة مشتبهة؟","3","arabic"
-"31","هل عانيت من ارتفاع الحرارة فوق ال 37.8 في ال48 ساعة الماضية؟","4","arabic"
-"32","هل تعاني من السعال؟","5","arabic"
-"33","هل تعاني من ضيق تنفّس؟","6","arabic"
-"34","هل تعاني من الام في الحنجرة؟","7","arabic"
-"35","هل تعاني من الام في العضلات؟","8","arabic"
-"36","هل تعاني من الاسهال؟","9","arabic"
-"37","هل تعاني من الام الرأس؟","10","arabic"
-"38","هل تشعر بالضعف أو الاعياء اوالتعب؟","11","arabic"
-"39","هل عانيت من هذه الاعراض لمدة تقل عن الأسبوعين؟","12","arabic"
-"54","Have you been traveling in the past 4 weeks?","1","english"
-"55","Where you in contact with a person confirmed to have the disease?","2","english"
-"56","Where you in contact with a person suspected to have the disease?","3","english"
-"57","Did you have a fever more than 37.8 in the past 48 hours?","4","english"
-"58","Do you have a cough or increase in your cough frequency?","5","english"
-"59","Are you out of breath faster than usual?","6","english"
-"60","Do you have sore throat?","7","english"
-"61","Did you have muscle pain in the past days?","8","english"
-"62","Do you have diarrhea?","9","english"
-"63","Do you have headache?","10","english"
-"64","Did you feel tired or weak?","11","english"
-"65","Have you been suffering from these symptoms for less than 2 weeks?","12","english"
-"80","Etiez-vous à l’étranger pendant les dernières 4 semaines?","1","french"
-"81","Etiez-vous en contact avec une personne ayant la maladie?","2","french"
-"82","Etiez-vous en contact avec une personne soupçonnée d’avoir la maladie?","3","french"
-"83","Pensez-vous avoir ou avoir eu de la fièvre >37.8 pendant les dernières 48 heures?","4","french"
-"84","Avez-vous une toux ou une augmentation de votre toux habituelle ces derniers jours?","5","french"
-"85","Avez-vous vu apparaître une gêne respiratoire ou une augmentation de votre gêne respiratoire habituelle?","6","french"
-"86","Avez-vous un mal de gorge apparu ces derniers jours?","7","french"
-"87","Avez-vous des douleurs musculaires?","8","french"
-"88","Avez-vous la diarrhée?","9","french"
-"89","Avez-vous eu des maux de tête?","10","french"
-"90","Avez-vous une fatigue inhabituelle ces derniers jours?","11","french"
-"91","Avez-vous ces symptômes depuis moins de 2 semaines?","12","french"
+1,لديّ حمّى (حرارة مرتفعة),arabic
+2,ظهرت لديّ احدى عوارض الجهاز التنفسي مؤخرا: سعال ، نزلة أنفية ، ألم في الحنجرة ، ضيق تنفس,arabic
+3,سافرت خلال ال14 يوما الماضية,arabic
+4,تخالطت مع حالة مثبتة مخبريا خلال ال14 يوما الماضية,arabic
+1,"I have a fever (high temperature)
+",english
+2,"I have newly acquired at least one of the following respiratory symptoms:
+Cough, Runny Nose, Sore Throat, Shortness of Breath",english
+3,"I have travelled within the past 14 days
+",english
+4,I came in close contact with a confirmed COVID-19 case within the past 14 days,english
+1,"
+J'ai de la fièvre (température élevée)",french
+2,"
+J'ai récemment acquis au moins l'un des symptômes respiratoires suivants:
+Toux, nez qui coule, mal de gorge, essoufflement",french
+3,J'ai voyagé au cours des 14 derniers jours,french
+4,Je me suis mélangé avec un cas cliniquement prouvé au cours des 14 derniers jours,french

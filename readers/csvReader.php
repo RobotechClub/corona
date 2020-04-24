@@ -3,8 +3,9 @@
 $resultArray = array();
 $messagesArr = array();
 
+$serverUrl = "https://robotech-corona.000webhostapp.com/";
 
-if (($handle = fopen("https://robotech-corona.000webhostapp.com/assets/MESSAGES.csv", "r")) !== FALSE) {
+if (($handle = fopen("../assets/MESSAGES.csv", "r")) !== FALSE) {
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
         $obj = new \stdClass();
         $obj->message = $data[1];
@@ -14,12 +15,12 @@ if (($handle = fopen("https://robotech-corona.000webhostapp.com/assets/MESSAGES.
     fclose($handle);
 }
 
-if (($handle = fopen("https://robotech-corona.000webhostapp.com/assets/QUESTIONS.csv", "r")) !== FALSE) {
+if (($handle = fopen("../assets/QUESTIONS.csv", "r")) !== FALSE) {
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
         $obj = new \stdClass();
+        $obj->score = $data[0];
         $obj->question = $data[1];
-        $obj->score = $data[2];
-        $obj->lang = $data[3];
+        $obj->lang = $data[2];
 
         array_push($resultArray, $obj);
     }

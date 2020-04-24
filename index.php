@@ -22,35 +22,13 @@
 
 <body>
                                 
-    <div class="navBar">
-        <nav id="navToolbar" class="navbar navbar-expand-md navbar-light bg-light">
-         <a class="navbar-brand" href="#">    <div class="web-logo">
-        <img src="images/redcross.png" alt="Lebanese Red Cross" width="60" height="60">
-    </div></a>
-            <button type="button" id="toogleBtn" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon">        
-                    </span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-                <div class="navbar-nav">
-                    <a id="houseItem" href="pdfShowHouse.php" class="nav-item nav-link">العزل المنزلي</a>
-                    <a id="awarenessItem" href="pdfShowAwarness.php" class="nav-item nav-link">الكورونا؟</a>
-                    <a id="wrongConceptsItem" href="pdfViewerPage.php" class="nav-item nav-link">مغالطات</a>
-                    <a id="homeItem" href="index.php" class="nav-item nav-link active">الرئيسية</a>
-
-                </div>
-            </div>
-        </nav>
-    </div>  
-
     <div id="loader"></div>
     <div class="wrapper" style="background-color:white">
 
         <div id="counter" style="float:right">
             <div class="form-row">
                 <h3 id="qid">1</h3>
-                <h2 id="totalqid"> /12 </h2>
+                <h2 id="totalqid"> /4 </h2>
             </div>
         </div>
         <form action="" id="wizard">
@@ -98,9 +76,9 @@
 
 
     <!-- Modal -->
-    <div class="modal fade" id="resultModal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    <div class="modal fade modal-lg" id="resultModal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
         aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="modalTitle">Results</h5>
@@ -108,7 +86,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body modal-xl">
                     ...
                 </div>
                 <div class="modal-footer">
@@ -121,7 +99,7 @@
     <footer id="footer">
       <div class = "div-footer">
           <div style="float:left">
-            <p>All Rights Reserved © RoboTech Halba</p>
+            <p>Powered By RoboTech Halba</p>
           </div>
           <div class="leftFooter">
 

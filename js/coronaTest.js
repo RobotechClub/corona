@@ -89,8 +89,8 @@ function btnResetAction() {
     counter = 0;
     displayCounter = 1;
     cachedAnswers = [];
-    yesAnswerArr=[];
-    noAnswerArr=[];
+    yesAnswerArr = [];
+    noAnswerArr = [];
     $('input[name="choiceButon"]').prop('checked', false);
     $('.wrapper').show();
     $('#selectForm').show();
@@ -147,33 +147,34 @@ function anyYes(fromNumb, to) {
 }
 
 function getMessage() {
-    if ((isYes(1) || isYes(2) || isYes(3)) && isNoSeq(4, 12)) {
+    if ((isYesSeq(1, 4) ||
+        (isYesSeq(1, 3) && isNo(4)) ||
+        (isYesSeq(2, 3) && isNo(1) && isNo(4)) ||
+        (isYesSeq(2, 4) && isNo(1) && isNo(3)) ||
+        (isYes(1) && isNo(2) && isYes(3) && isNo(4)) ||
+        (isYes(1) && isYes(2) && isNo(3) && isYes(4)))) {
         return messages[0].message;
     }
-
-    if ((isYes(1) || isYes(2) || isYes(3)) && (isYes(4) || isYes(5) || isYes(6) || isYes(7))
-        || ((isYes(1) || isYes(2) || isYes(3)) && isNoSeq(4, 7) && twoYes(8, 12))
-        || (isNoSeq(1, 3) && (isYes(4) || isYes(5) || isYes(6) || isYes(7)) && (isYes(8) || isYes(9) || isYes(10) || isYes(11) || isYes(12)))) {
-
+    if (((isYesSeq(1, 2) && isNoSeq(3, 4)) || (
+        isYesSeq(1, 3) && isNo(4)) ||
+        (isYes(1) && isNoSeq(2, 4)) ||
+        (isYes(2) && isNo(1) && isNoSeq(3, 4)))) {
         return messages[1].message;
     }
-
-    if (isYes(1) || isYes(2) || isYes(3) && isNoSeq(4, 7) && anyYes(8, 12)
-        || (isNoSeq(1, 3) && anyYes(4, 7) && isNoSeq(8, 12))) {
+    if (isNoSeq(1, 4)) {
         return messages[2].message;
     }
-
-    if (isNoSeq(1, 12)) {
+    if (((isYesSeq(3, 4) && isNoSeq(1, 2)) ||
+        (isYes(3) && isNoSeq(1, 2) && isNo(4)) ||
+        (isYes(4) && isNoSeq(1, 3)) ||
+        (isYes(1) && isNoSeq(2, 3) && isYes(4)))) {
         return messages[3].message;
-    }
-    if (isNoSeq(1, 7) && isYesSeq(8, 12)) {
-        return messages[4].message;
     }
 }
 
 
 function stepNextAction() {
-    $(".next").css("color","black")
+    $(".next").css("color", "black")
     const value = $('input[name=choiceButon]:checked').val()
     if (!value) {
         alert("Please choose answer")
@@ -192,7 +193,7 @@ function stepNextAction() {
             $("#closeBtn").html("إغلاق")
             $("#restTestBtn").html("إعادة الفحص")
 
-        } 
+        }
         else if (lang === "french") {
             $(".modal-body").css("direction", "ltr");
             $("#closeBtn").html("Fermer")
@@ -212,11 +213,11 @@ function stepNextAction() {
 
 
     } else {
-        
+
         const disCounter = displayCounter;
         const nextCachedValue = cachedAnswers.find(e => e.counter === disCounter + 1);
         const cachedValue = cachedAnswers.find(e => e.counter === displayCounter);
-      
+
         const value = $('input[name=choiceButon]:checked').val()
 
         if (value === "yes")
@@ -231,7 +232,7 @@ function stepNextAction() {
             cachedAnswers.push({ "counter": displayCounter, value })
 
         }
-        if(!nextCachedValue){
+        if (!nextCachedValue) {
             $('input[name="choiceButon"]').prop('checked', false);
         }
         displayCounter++
@@ -249,7 +250,7 @@ function stepNextAction() {
     }
 }
 function stepPreviousAction() {
-    $(".previous").css("color","black")
+    $(".previous").css("color", "black")
     if (counter <= 0) {
         return;
     } else {
