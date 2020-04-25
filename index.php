@@ -104,6 +104,8 @@
             </div>
         </div>
     </div> -->
+        <button type="button" id="restTestBtn" class="btn btn-primary" onclick="btnResetAction()">ReTest</button>
+
         <main>
         <a id= "dialogBtn1" class="morph-btn" href="#modal-1">Open Modal</a><br/><br/>
         </main>
@@ -111,7 +113,7 @@
         <div class="modal-content">
         ...
         </div>
-        <button class="close-modal">Close</button><span class="morph-background"></span>
+            <button id = "closeBtn" class="close-modal">Close</button><span class="morph-background"></span>
         </div>
         </div>
 

@@ -8,6 +8,8 @@ let lang = "";
 let cachedAnswers = [];
 
 $(document).ready(function () {
+    $("#restTestBtn").hide();
+    $("#closeBtn").hide();
     $("#dialogBtn1").hide();
     $("#ageSlider").hide();
     $("#yesNoSection").hide();
@@ -92,8 +94,12 @@ function btnResetAction() {
     $('input[name="choiceButon"]').prop('checked', false);
     $('.wrapper').show();
     $('#selectForm').show();
+    $('#footer').show();
     $("#startBtn").show();
     $('#resultModal').modal('hide');
+    $('#restTestBtn').hide();
+    var link = document.getElementById('closeBtn');
+    link.click();
 }
 
 
@@ -220,6 +226,8 @@ function stepNextAction() {
         $("#yesNoSection").hide();
         if (lang === "arabic") {
             $(".modal-body").css("direction", "rtl");
+            $("li").css("direction", "rtl");
+            $("li").css("margin-right", "20px");
             $("#modalTitle").html("النتائج");
             $("#closeBtn").html("إغلاق")
             $("#restTestBtn").html("إعادة الفحص")
@@ -227,6 +235,8 @@ function stepNextAction() {
         }
         else if (lang === "french") {
             $(".modal-body").css("direction", "ltr");
+            $("li").css({'direction':'ltr'});
+            $("li").css("margin-left", "20px");
             $("#closeBtn").html("Fermer")
             $("#restTestBtn").html("Retester")
             $("#modalTitle").html("Résultat");
@@ -234,13 +244,16 @@ function stepNextAction() {
         }
         else {
             $(".modal-body").css("direction", "ltr");
-            $("li").css("margin-left", "30px");
+            $("li").css({'direction':'ltr'});
+            $("li").css("margin-left", "20px");
             $("#closeBtn").html("Close")
             $("#restTestBtn").html("ReTest")
             $("#modalTitle").html("Results");
         }
         $(".modal-content").html(message);
-        
+        $('#footer').hide();
+        $('#restTestBtn').show();
+
         var link = document.getElementById('dialogBtn1');
         link.click();
 

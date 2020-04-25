@@ -187,12 +187,27 @@ h3 {
     font-size: 20px;
   
   }
+
+  #restTestBtn{
+    position: fixed;
+    top: 2%;
+    left: 46%;
+    z-index: 4;
+  }
+
  @media only screen 
   and (min-device-width: 170px) 
   and (max-device-width: 764px){
     
     #resultModal{
       margin-left:0 ;
+    }
+
+    #restTestBtn{
+      position: fixed;
+      top: 2%;
+      left: 40%;
+      z-index: 4;
     }
 
     .iframe-placeholder{
@@ -462,16 +477,16 @@ footer .div-footer {
   color: white;
 }
 
-  .modal-body{
+  /* .modal-content{
     line-height: 12px;
     font-size: 13px;
   }
 
-  .modal-body ul:before {
+  .modal-content ul:before {
     content: " - ";
     text-indent: -5px;
     font-size: 16px;
-  }
+  } */
 
   .leftFooter{
     float:right;
@@ -511,6 +526,7 @@ footer .div-footer {
   .modalArP{
     text-align: right;
     margin-right: 15px;
+    direction: rtl;
   }
 
   #modalTitle{
@@ -521,3 +537,4 @@ footer .div-footer {
     color: red;
     font-size: 20px;
   }
+  

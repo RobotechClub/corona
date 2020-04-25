@@ -12,10 +12,10 @@
    *-------------------------------- */
   .morph-modal {
     position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+    top: 10%;
+    left: 10%;
+    height: 85%;
+    width: 80%;
     opacity: 0;
     visibility: hidden;
   }
@@ -39,13 +39,13 @@
     position: relative;
     height: 100%;
     overflow: auto;
-    padding: 100px 5%;
+    padding: 40px 5%;
   }
   
   .close-modal {
     position: absolute;
     top: 20px;
-    right: 20px;
+    left: 20px;
     cursor: pointer;
     /* replace text with image */
     height: 56px;
@@ -89,8 +89,8 @@
    *-------------------------------- */
   .morph-btn, .morph-background {
     display: inline-block;
-    background-color: #fff;
-    height: 45px;
+    background-color: #1b87c6;
+    height: 100%;
     line-height: 45px;
     width: 170px;
   }
@@ -105,4 +105,17 @@
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s;
   }
+  @media only screen 
+  and (min-device-width: 170px) 
+  and (max-device-width: 764px){
   
+    .morph-modal {
+      position: fixed;
+      top: 10%;
+      left: 0;
+      height: 85%;
+      width: 100%;
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
