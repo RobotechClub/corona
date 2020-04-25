@@ -1,18 +1,22 @@
+0,الرجاء اختيار عمرك,arabic
 1,لديّ حمّى (حرارة مرتفعة),arabic
-2,ظهرت لديّ احدى عوارض الجهاز التنفسي مؤخرا: سعال ، نزلة أنفية ، ألم في الحنجرة ، ضيق تنفس,arabic
+2,"<p>ظهرت لديّ احدى عوارض الجهاز التنفسي مؤخرا</p> 
+
+<p>(سعال ، نزلة أنفية ، ألم في الحنجرة ، ضيق تنفس)</p> ",arabic
 3,سافرت خلال ال14 يوما الماضية,arabic
 4,تخالطت مع حالة مثبتة مخبريا خلال ال14 يوما الماضية,arabic
+0,How old are you?,english
 1,"I have a fever (high temperature)
 ",english
-2,"I have newly acquired at least one of the following respiratory symptoms:
-Cough, Runny Nose, Sore Throat, Shortness of Breath",english
+2,"<p>I have newly acquired at least one of the following respiratory symptoms:</p> 
+<p>(Cough, Runny Nose, Sore Throat, Shortness of Breath)</p>",english
 3,"I have travelled within the past 14 days
 ",english
 4,I came in close contact with a confirmed COVID-19 case within the past 14 days,english
+0,Quel âge avez-vous?,french
 1,"
 J'ai de la fièvre (température élevée)",french
-2,"
-J'ai récemment acquis au moins l'un des symptômes respiratoires suivants:
-Toux, nez qui coule, mal de gorge, essoufflement",french
+2,"<p>J'ai récemment acquis au moins l'un des symptômes respiratoires suivants:</p>
+<p>(Toux, nez qui coule, mal de gorge, essoufflement)</p>",french
 3,J'ai voyagé au cours des 14 derniers jours,french
 4,Je me suis mélangé avec un cas cliniquement prouvé au cours des 14 derniers jours,french

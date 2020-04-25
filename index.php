@@ -10,6 +10,8 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
+
+    <link rel="stylesheet" href="<?php echo "css/slider.css?v=".round(microtime(true) * 1000); ?>">
     <link rel="stylesheet" href="<?php echo "css/style.css?v=".round(microtime(true) * 1000); ?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -58,6 +60,11 @@
                         <option value="french">French</option>
                     </select>
                 </div>
+                                
+             <div id="ageSlider" class="range-slider">
+            <input class="range-slider__range" type="range" value="40" min="0" max="100">
+            <span class="range-slider__value">0</span>
+            </div>
 
                 <div style="width:100%; text-align:center;">
                     <button type="button" id="startBtn" class="btn btn-secondary startBtn"
@@ -110,6 +117,7 @@
       </div>
     </footer>
     <script src="<?php echo "js/coronaTest.js?v=".round(microtime(true) * 1000); ?>"> </script>
+    <script src="<?php echo "js/slider.js?v=".round(microtime(true) * 1000); ?>"> </script>
 
 </body>
 

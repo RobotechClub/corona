@@ -1,5 +1,5 @@
 let counter = 0;
-let displayCounter = 1;
+let displayCounter = 0;
 let questions = [];
 let messages = [];
 let yesAnswerArr = [];
@@ -8,10 +8,12 @@ let lang = "";
 let cachedAnswers = [];
 
 $(document).ready(function () {
+    $("#ageSlider").hide();
     $("#yesNoSection").hide();
     $("#counter").hide();
     $("#steper").hide();
     $("#loader").hide();
+    $("#ageForm").hide();
 
     $('input[name="choiceButon"]').prop('checked', false);
 
@@ -71,15 +73,11 @@ function btnStartAction() {
             $('.wrapper').show();
             $("#startBtn").hide();
             $('#selectForm').hide();
-            $("#yesNoSection").show();
-            $("#counter").show();
-            $("#steper").show();
-            $("#question").show();
 
+            $("#question").show();
             $("#question").html(questions[counter].question)
-            $("#qid").html(displayCounter)
-            $("#yesRadioLabel").html(questions[counter].yes)
-            $("#noRadioLabel").html(questions[counter].no)
+            $("#ageSlider").show();
+            $("#steper").show();
 
         }
     });
@@ -175,8 +173,19 @@ function getMessage() {
 
 function stepNextAction() {
     $(".next").css("color", "black")
+
+    if(counter === 0){
+        $("#ageSlider").hide();
+        $("#yesNoSection").show();
+        $("#counter").show();
+        $("#qid").html(displayCounter)
+        $("#yesRadioLabel").html(questions[counter].yes)
+        $("#noRadioLabel").html(questions[counter].no)
+    }
+
+
     const value = $('input[name=choiceButon]:checked').val()
-    if (!value) {
+    if (!value && counter !== 0) {
         alert("Please choose answer")
         return;
     }
