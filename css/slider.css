@@ -1,15 +1,6 @@
 *, *:before, *:after {
     box-sizing: border-box;
 }
-body {
-    font-family: sans-serif;
-    padding: 60px 20px;
-}
-@media (min-width: 600px) {
-    body {
-        padding: 60px;
-   }
-}
 
 .range-slider {
     width: 100%;
