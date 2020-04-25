@@ -85,7 +85,7 @@ function btnStartAction() {
 
 function btnResetAction() {
     counter = 0;
-    displayCounter = 1;
+    displayCounter = 0;
     cachedAnswers = [];
     yesAnswerArr = [];
     noAnswerArr = [];
@@ -150,11 +150,12 @@ function getMessage() {
         (isYesSeq(2, 3) && isNo(1) && isNo(4)) ||
         (isYesSeq(2, 4) && isNo(1) && isNo(3)) ||
         (isYes(1) && isNo(2) && isYes(3) && isNo(4)) ||
-        (isYes(1) && isYes(2) && isNo(3) && isYes(4)))) {
+        (isNo(1) && isYes(2) && isNo(3) && isYes(4)) ||
+        (isYes(1) && isNo(2) && isYesSeq(3,4)) ||
+        (isYesSeq(1,2) && isNo(3) && isYes(4)))) {
         return messages[0].message;
     }
-    if (((isYesSeq(1, 2) && isNoSeq(3, 4)) || (
-        isYesSeq(1, 3) && isNo(4)) ||
+    if (((isYesSeq(1, 2) && isNoSeq(3, 4)) || 
         (isYes(1) && isNoSeq(2, 4)) ||
         (isYes(2) && isNo(1) && isNoSeq(3, 4)))) {
         return messages[1].message;
