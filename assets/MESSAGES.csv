@@ -1,4 +1,4 @@
-1,"<p class = ""modalAr"">نحن في انتظار مكالمتك:</p> 
+1,"<p class = ""modalAr msgTitle"">نحن في انتظار مكالمتك:</p> 
 <ul class = ""modalAr"">يرجى الإتصال بنا على الخط الساخن التالي 01594459</ul> 
 <ul class = ""modalAr"">يمكن أن يكون الخط الساخن مشغول، لذلك يرجى الإنتظار</ul>
 <ul class = ""modalAr"">بينما يتم مساعدتك من قبل فريقنا في وزارة الصحة العامة، يرجى التقيد بما يلي:</ul>  
@@ -18,7 +18,7 @@
 <p class = ""modalAr""> <a href=""https://www.who.int/ar/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters"">https://www.who.int/ar/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters</a> </>
 
 ",arabic
-2,"<p class = ""modalAr"">العناية في المنزل:</p> 
+2,"<p class = ""modalAr msgTitle"">العناية في المنزل:</p> 
 <ul class = ""modalAr"">لا داعي للإتصال بالخط الساخن 01594459</ul> 
 <ul class = ""modalAr"">الرجاء ملازمة المنزل حتى زوال العوارض</ul>
 
@@ -49,7 +49,7 @@
 
 ",arabic
 3,"
-<p class = ""modalAr"">لا داعي للهلع:</pl> 
+<p class = ""modalAr msgTitle"">لا داعي للهلع:</pl> 
 <ul class = ""modalAr"">الرجاء ملازمة تعليمات الحكومة اللبنانية والبقاء في المنزل</ul> 
 <ul class = ""modalAr"">لمعلومات إضافية عن فيروس كورونا المستجد، عن العوارض، فترة الحضانة، فترة العدوى، وغيرها من المعلومات، الرجاء أو منظمة الصحة العالمية (who.int) ومتابعتهم عبر مواقع التواصل الإجتماعي (www.moph.gov.lb) الإستعانة بالموقع الرئيسي لوزارة الصحة العامة
 لأي معلومات أخرى، الرجاء الإتصال على الخط الساخن لوزارة الصحة العامة 1214
@@ -65,7 +65,7 @@
 
 <p class = ""modalAr""> <a href=""https://www.who.int/ar/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters"">https://www.who.int/ar/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters</a> </>
 ",arabic
-4,"<p class = ""modalAr"">الحجر الصّحي المنزلي:</p> 
+4,"<p class = ""modalAr msgTitle"">الحجر الصّحي المنزلي:</p> 
 <ul class = ""modalAr"">لا داعي للإتصال بالخط الساخن 01594459 في الوقت الحالي</ul> 
 <ul class = ""modalAr"">الرجاء إتباع إجراءات الحجر المنزلي لمدة 14 يوما منذ تاريخ التعرض، ومراقبة نفسك</ul>
 <ul class = ""modalAr"">في حال ظهرت لديك حمّى أو أي عوارض التهاب تنفسية حادة، عليك الإتصال بالخط الساخن على الرقم 01594459</ul>  
@@ -87,7 +87,7 @@
 
 <p class = ""modalAr""> <a href=""https://www.who.int/ar/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters"">https://www.who.int/ar/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters</a> </>",arabic
 6,"
-<p>Nous attendons votre appel:</p>  
+<p class = ""modalEn msgTitle"">Nous attendons votre appel:</p>  
 
 <li>Appelez-nous au numéro hotline au 01594459</li>
 <li>La ligne directe peut être occupée, veuillez patienter s’il vous plaît</li>
@@ -106,7 +106,7 @@
 <p>Organisation mondiale de la santé - Lignes directrices sur les coronavirus:</p>
 
 <p> <a href=""https://www.who.int/ar/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters"">https://www.who.int/ar/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters</a> </>",french
-7,"<p>Soins personnels à domicile:</>
+7,"<p class = ""modalEn msgTitle"">Soins personnels à domicile:</>
 
 
 <li>Vous n'avez pas besoin d'appeler le numéro de hotline au 01594459
@@ -132,7 +132,7 @@
 <p>Organisation mondiale de la santé - Lignes directrices sur les coronavirus:</p>
 
 <p> <a href=""https://www.who.int/ar/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters"">https://www.who.int/ar/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters</a> </>",french
-8,"<p>Pas de panique:</p>
+8,"<p class = ""modalEn msgTitle"">Pas de panique:</p>
 
 
 <li>Vous n'avez pas besoin d'appeler la ligne directe au 01594459</li>
@@ -148,7 +148,7 @@
 <p>Organisation mondiale de la santé - Lignes directrices sur les coronavirus:</p>
 
 <p> <a href=""https://www.who.int/ar/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters"">https://www.who.int/ar/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters</a> </>",french
-9,"<p>Confinemet à domicile:</p>
+9,"<p class = ""modalEn msgTitle"">Confinemet à domicile:</p>
 <li>Vous n'avez pas besoin d'appeler la hotline 01594459 pour le moment</li>
 <li>Confinemet à domicile pendant 14 jours et surveillez-vous</li>
 <li>Si des symptômes apparaissent, contactez les numéros de hotline au 01594459</li>
@@ -167,7 +167,7 @@
 <p>Organisation mondiale de la santé - Lignes directrices sur les coronavirus:</p>
 
 <p> <a href=""https://www.who.int/ar/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters"">https://www.who.int/ar/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters</a> </>",french
-22,"<p>We are waiting for your call:</p>
+22,"<p class = ""modalEn msgTitle"">We are waiting for your call:</p>
 
 
 <li>Call us on the hotline number at 01594459</li>
@@ -186,7 +186,7 @@
 <p> <a href=""https://www.moph.gov.lb/ar/Pages/2/24870/novel-coronavirus-2019"">https://www.moph.gov.lb/ar/Pages/2/24870/novel-coronavirus-2019</a>
 <p>World Health Organization- Coronavirus Guidelines:</p>
 <p> <a href=""https://www.who.int/ar/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters"">https://www.who.int/ar/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters</a> </>",english
-23,"<p>Self care at home:</p>
+23,"<p class = ""modalEn msgTitle"">Self care at home:</p>
 
 
 <li>You do not need to call the hotline number at 01594459</li>
@@ -210,7 +210,7 @@
 <p> <a href=""https://www.moph.gov.lb/ar/Pages/2/24870/novel-coronavirus-2019"">https://www.moph.gov.lb/ar/Pages/2/24870/novel-coronavirus-2019</a>
 <p>World Health Organization- Coronavirus Guidelines:</p>
 <p> <a href=""https://www.who.int/ar/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters"">https://www.who.int/ar/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters</a> </>",english
-24,"<p>No need to panic:</p>
+24,"<p class = ""modalEn msgTitle"">No need to panic:</p>
 
 
 <li>You do not need to call the hot line at 01594459</li>
@@ -224,7 +224,7 @@ For further inquiries, please call 1214</p>
 <p> <a href=""https://www.moph.gov.lb/ar/Pages/2/24870/novel-coronavirus-2019"">https://www.moph.gov.lb/ar/Pages/2/24870/novel-coronavirus-2019</a>
 <p>World Health Organization- Coronavirus Guidelines:</p>
 <p> <a href=""https://www.who.int/ar/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters"">https://www.who.int/ar/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters</a> </>",english
-25,"<p>Home quarantine:</p>
+25,"<p class = ""modalEn msgTitle"">Home quarantine:</p>
 
 
 <li>You do not need to call the hotline 01594459 at this moment</li>

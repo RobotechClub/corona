@@ -505,7 +505,9 @@ footer .div-footer {
   .modalAr{
     text-align: right;
   }
-
+  .modalEn{
+    text-align: left;
+  }
   .modalArP{
     text-align: right;
     margin-right: 15px;
@@ -515,4 +517,7 @@ footer .div-footer {
     text-align: center;
     font-size: 18px;
   }
-  
+  .msgTitle{
+    color: red;
+    font-size: 20px;
+  }
