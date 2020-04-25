@@ -10,7 +10,8 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-
+    
+    <link rel="stylesheet" href="<?php echo "css/dialog.css?v=".round(microtime(true) * 1000); ?>">
     <link rel="stylesheet" href="<?php echo "css/slider.css?v=".round(microtime(true) * 1000); ?>">
     <link rel="stylesheet" href="<?php echo "css/style.css?v=".round(microtime(true) * 1000); ?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -83,7 +84,7 @@
 
 
     <!-- Modal -->
-    <div class="modal fade modal-lg" id="resultModal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    <!-- <div class="modal fade modal-lg" id="resultModal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
         aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -102,7 +103,18 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+        <main>
+        <a id= "dialogBtn1" class="morph-btn" href="#modal-1">Open Modal</a><br/><br/>
+        </main>
+        <div class="morph-modal" id="modal-1">
+        <div class="modal-content">
+        ...
+        </div>
+        <button class="close-modal">Close</button><span class="morph-background"></span>
+        </div>
+        </div>
+
     <footer id="footer">
       <div class = "div-footer">
           <div style="float:left">
@@ -118,6 +130,7 @@
     </footer>
     <script src="<?php echo "js/coronaTest.js?v=".round(microtime(true) * 1000); ?>"> </script>
     <script src="<?php echo "js/slider.js?v=".round(microtime(true) * 1000); ?>"> </script>
+    <script src="<?php echo "js/dialog.js?v=".round(microtime(true) * 1000); ?>"> </script>
 
 </body>
 

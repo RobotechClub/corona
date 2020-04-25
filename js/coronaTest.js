@@ -8,6 +8,7 @@ let lang = "";
 let cachedAnswers = [];
 
 $(document).ready(function () {
+    $("#dialogBtn1").hide();
     $("#ageSlider").hide();
     $("#yesNoSection").hide();
     $("#counter").hide();
@@ -103,7 +104,7 @@ function isNo(number) {
     return noAnswerArr.includes(number);
 }
 function isNoSeq(fromNumb, to) {
-    for (var i = fromNumb; i < to; i++) {
+    for (var i = fromNumb; i <= to; i++) {
         const isInclud = noAnswerArr.includes(i);
         if (!isInclud)
             return isInclud;
@@ -111,7 +112,7 @@ function isNoSeq(fromNumb, to) {
     return true;
 }
 function isYesSeq(fromNumb, to) {
-    for (var i = fromNumb; i < to; i++) {
+    for (var i = fromNumb; i <= to; i++) {
         const isInclud = yesAnswerArr.includes(i);
         if (!isInclud)
             return isInclud;
@@ -237,9 +238,10 @@ function stepNextAction() {
             $("#restTestBtn").html("ReTest")
             $("#modalTitle").html("Results");
         }
-        $(".modal-body").html(message);
-        $('#resultModal').modal('show');
-
+        $(".modal-content").html(message);
+        
+        var link = document.getElementById('dialogBtn1');
+        link.click();
 
     } else {
 
