@@ -63,7 +63,6 @@ function btnStartAction() {
         url: 'readers/csvReader.php',
         success: function (data) {
             lang = $('#select').find(":selected").val();
-            console.log(data)
             data = JSON.parse(data)
             questions = data.questionArr.filter(e => e.lang === lang)
             messages = data.messagesArr.filter(e => e.lang === lang);
@@ -192,6 +191,26 @@ function stepNextAction() {
     }
 
     if (counter >= questions.length - 1) {
+        console.log(yesAnswerArr);
+        console.log(noAnswerArr);
+
+        const cachedValue = cachedAnswers.find(e => e.counter === displayCounter);
+
+        const value = $('input[name=choiceButon]:checked').val()
+
+        if (value === "yes")
+            yesAnswerArr.push(displayCounter);
+        else {
+            noAnswerArr.push(displayCounter);
+        }
+
+        if (cachedValue)
+            cachedValue.value = value;
+        else {
+            cachedAnswers.push({ "counter": displayCounter, value })
+
+        }
+
         const message = getMessage();
         $("#question").hide();
         $("#counter").hide();
