@@ -194,7 +194,7 @@ function stepNextAction() {
 
     const value = $('input[name=choiceButon]:checked').val()
     if (!value && counter !== 0) {
-        alert("Please choose answer")
+        swal('Please Choose Answer');
         return;
     }
 
