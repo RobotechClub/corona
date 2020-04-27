@@ -195,10 +195,39 @@ h3 {
     z-index: 4;
   }
 
+  .form-check-input{
+    height: 30px;
+    width: 25px;
+ }     
+.form-check-label{
+    font-size: 26px;
+    margin-left: 10px;
+}
+
+#radioInputYes {
+  margin-top: 8px;
+}
+#radioInputNo {
+  margin-left: -24px;
+}
+
  @media only screen 
   and (min-device-width: 170px) 
   and (max-device-width: 764px){
     
+    #radioInputYes {
+      margin-top: 8px;
+    }
+    #radioInputNo {
+      margin-left: -22px;
+      margin-top: 8px;
+    }
+
+    .form-check-input{
+      height: 15px;
+      width: 20px;
+   }    
+
   .modal-content{
     font-size: 14px;
   }
@@ -270,17 +299,17 @@ h3 {
       font-size: 30px;
     }
     .form-check-label{
-      font-size: 15px;
+      font-size: 20px;
   }
   .noDiv{
     margin: 10px;
-    font-size: 20px;
+    font-size: 18px;
 
   } 
   .yesDiv{
    margin-left: 8px;
    margin: 10px;
-   font-size: 20px;
+   font-size: 18px;
  }
  .startBtn, .showResult{
   margin: 0;
@@ -358,14 +387,7 @@ footer .div-footer {
 
 }
 
- .form-check-input{
-    height: 30px;
-    width: 25px;
- }     
-.form-check-label{
-    font-size: 26px;
-    margin-left: 10px;
-}
+
 .startBtn, .showResult{
   margin: 0;
   font-family: "Bookman Old Style";
@@ -512,12 +534,6 @@ footer .div-footer {
     z-index: 100;
   }
 
-  #radioInputYes {
-    margin-top: 8px;
-  }
-  #radioInputNo {
-    margin-left: -24px;
-  }
 
   .modalAr{
     text-align: right;

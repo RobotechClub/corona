@@ -305,7 +305,7 @@ function stepNextAction() {
 }
 function stepPreviousAction() {
     $(".previous").css("color", "black")
-    if (counter <= 0) {
+    if (counter <= 1) {
         return;
     } else {
         displayCounter--
