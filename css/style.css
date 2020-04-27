@@ -199,6 +199,9 @@ h3 {
   and (min-device-width: 170px) 
   and (max-device-width: 764px){
     
+  .modal-content{
+    font-size: 14px;
+  }
     #resultModal{
       margin-left:0 ;
     }
@@ -206,7 +209,7 @@ h3 {
     #restTestBtn{
       position: fixed;
       top: 2%;
-      left: 40%;
+      left: 35%;
       z-index: 4;
     }
 
@@ -303,8 +306,7 @@ h3 {
 }
 
 #question{
-  margin: 10px;
-  font-size: 22px;
+  font-size: 15px;
 
 }
 
